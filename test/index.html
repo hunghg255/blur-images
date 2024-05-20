@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blur Image</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+    }
+
+    .blurImage {
+      position: relative;
+    }
+
+    .blurImage::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      backdrop-filter: blur(20px);
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Blur Image</h1>
+
+  <table>
+    <tr>
+      <th>
+        Original Image
+      </th>
+      <th>
+        Blurred Image
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <img src="./original/aaron-burden-151465-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/aaron-burden-151465-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./original/anthony-esau-173126-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/anthony-esau-173126-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./original/aron-visuals-974734-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/aron-visuals-974734-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="./original/beach.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/beach.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="./original/charles-550068-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/charles-550068-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="./original/eric-marty-780304-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/eric-marty-780304-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="./original/ian-dooley-298769-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/ian-dooley-298769-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="./original/meric-dagli-487815-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/meric-dagli-487815-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="./original/mona-lisa.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/mona-lisa.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="./original/quino-al-101314-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/quino-al-101314-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="./original/shane-young-769905-unsplash.jpg" alt="" srcset="">
+      </td>
+      <td>
+        <div class="blurImage">
+          <img src="./output/shane-young-769905-unsplash.jpeg" alt="" srcset="">
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
