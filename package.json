@@ -1,6 +1,6 @@
 {
   "name": "blur-images",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
@@ -61,13 +61,13 @@
     "commit-msg": "npm run verify-commit"
   },
   "keywords": [],
-  "homepage": "https://github.com/hunghg255/bunchee-package",
+  "homepage": "https://github.com/hunghg255/blur-images",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hunghg255/bunchee-package"
+    "url": "https://github.com/hunghg255/blur-images"
   },
   "bugs": {
-    "url": "https://github.com/hunghg255/bunchee-package/issues"
+    "url": "https://github.com/hunghg255/blur-images/issues"
   },
   "dependencies": {
     "p-map": "^7.0.2",
